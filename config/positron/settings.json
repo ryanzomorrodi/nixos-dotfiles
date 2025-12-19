@@ -1,0 +1,60 @@
+{
+    "files.associations": {
+        "renv.lock": "json"
+    },
+    // vim motions
+    "extensions.experimental.affinity": {
+        "asvetliakov.vscode-neovim": 1
+    },
+    // formating
+    "air.executablePath": "/etc/profiles/per-user/user/bin/air",
+    "air.executableStrategy": "path",
+    "editor.formatOnSave": true,
+    "jarl.logLevel": "info",
+    "jarl.executableStrategy": "environment",
+    "jarl.executablePath": "/etc/profiles/per-user/user/bin/jarl",
+    "jarl.assignmentOperator": "<-",
+    // sort files
+    "explorer.sortOrder": "type",
+    // rust analyzer
+    "rust-analyzer.server.path": "/etc/profiles/per-user/user/bin/rust-analyzer",
+    // looks
+    "workbench.startupEditor": "none",
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "workbench.sideBar.location": "left",
+    "workbench.activityBar.location": "hidden",
+    "workbench.statusBar.visible": false,
+    "workbench.topActionBar.visible": false,
+    "editor.minimap.enabled": false,
+    "editor.hideCursorInOverviewRuler": true,
+    "editor.overviewRulerBorder": false,
+    "editor.scrollbar.horizontal": "hidden",
+    "editor.scrollbar.vertical": "hidden",
+    "breadcrumbs.enabled": false,
+    "workbench.tree.renderIndentGuides": "none",
+    "explorer.openEditors.visible": 1,
+    "explorer.decorations.colors": false,
+    "editor.bracketPairColorization.enabled": false,
+    "editor.guides.highlightActiveBracketPair": false,
+    "editor.guides.bracketPairsHorizontal": false,
+    "editor.guides.indentation": false,
+    "editor.cursorBlinking": "phase",
+    "editor.cursorSmoothCaretAnimation": "on",
+    "editor.renderLineHighlight": "none",
+    "editor.glyphMargin": false,
+    "editor.showFoldingControls": "never",
+    "editor.lineNumbers": "relative",
+    "workbench.layoutControl.type": "menu",
+    "window.title": " ",
+    "diffEditor.ignoreTrimWhitespace": false,
+    "workbench.editor.showTabs": "none",
+    "workbench.navigationControl.enabled": false,
+    "window.titleBarStyle": "native",
+    "window.customTitleBarVisibility": "never",
+    "window.menuBarVisibility": "toggle",
+    "explorer.autoReveal": false,
+    "workbench.secondarySideBar.defaultVisibility":"hidden",
+    "files.exclude": {
+        "**/.git": false
+    }
+}

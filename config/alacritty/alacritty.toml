@@ -1,0 +1,50 @@
+# ────────────────────────────────────────────────────────────
+# Omarchy Felix Theme for Alacritty
+# By Ty Richards
+# https://github.com/TyRichards
+# ────────────────────────────────────────────────────────────
+
+[window]
+opacity = 0.9
+
+padding.x = 10
+padding.y = 10
+decorations = "none"
+
+[font]
+size = 12.0
+
+
+[colors]
+
+[colors.primary]
+background = "#1D1D1D"
+foreground = "#f8f8f2"
+
+[colors.cursor]
+text = "#272822"
+cursor = "#f8f8f2"
+
+[colors.normal]
+black = "#272822"
+red = "#f92672"
+green = "#a6e22e"
+yellow = "#f4bf75"
+blue = "#66d9ef"
+magenta = "#ae81ff"
+cyan = "#a1efe4"
+white = "#f8f8f2"
+
+[colors.bright]
+black = "#75715e"
+red = "#f92672"
+green = "#a6e22e"
+yellow = "#f4bf75"
+blue = "#66d9ef"
+magenta = "#ae81ff"
+cyan = "#a1efe4"
+white = "#f9f8f5"
+
+[colors.selection]
+background = '#403e41'
+text = '#e6d9db'

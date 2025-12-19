@@ -1,0 +1,116 @@
+[
+    // Moving things around
+    {
+        "key": "ctrl+. ctrl+l",
+        "command": "workbench.action.positronTwoPaneDataScienceLayout"
+    },
+    // Focus
+    //// Editor
+    {
+        "key": "ctrl+. ctrl+f",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.focusActiveEditorGroup",
+                "workbench.action.togglePanel"
+            ]
+        }
+    },
+    //// Console
+    {
+        "key": "ctrl+. ctrl+g",
+        "command": "workbench.action.positronConsole.focusConsole"
+    },
+    {
+        "key": "ctrl+. ctrl+shift+g",
+        "command": "workbench.action.positronConsole.clearConsole"
+    },
+    //// Terminal
+    {
+        "key": "ctrl+. ctrl+h",
+        "command": "workbench.action.terminal.focus"
+    },
+    {
+        "key": "ctrl+. ctrl+shift+h",
+        "command": "workbench.action.terminal.clear"
+    },
+    { // Restart terminal
+        "key": "ctrl+shift+9",
+        "command": "runCommands",
+        "args": {
+            "commands": [
+                "workbench.action.terminal.kill",
+                "workbench.action.terminal.new"
+            ]
+        }
+    },
+    // Files
+    {
+        "key": "ctrl+. ctrl+r",
+        "command": "r.createNewFile"
+    },
+    {
+        "key": "ctrl+. ctrl+q",
+        "command": "quarto.fileNewDocument"
+    },
+    // Addins
+    {
+        "key": "ctrl+. ctrl+2",
+        "command": "workbench.action.executeCode.console",
+        "args": {
+            "langId": "r",
+            "code": "eval(parse(text = paste0('bench::mark(', reprex:::rstudio_selection(), ')')))",
+            "focus": false
+        }
+    },
+    // Package Development
+    {
+        "key": "ctrl+. ctrl+t",
+        "command": "workbench.action.executeCode.silently",
+        "args": {
+            "langId": "r",
+            "code": "usethis::use_test()",
+            "focus": false
+        }
+    },
+    {
+        "key": "ctrl+. ctrl+shift+t",
+        "command": "workbench.action.executeCode.console",
+        "args": {
+            "langId": "r",
+            "code": "devtools::test_active_file()",
+            "focus": false
+        }
+    },
+    // sasquatch
+    {
+        "key": "ctrl+shift+enter",
+        "command": "workbench.action.executeCode.console",
+        "when": "editorTextFocus",
+        "args": {
+            "langId": "r",
+            "code": "sasquatch::sas_run_selected()",
+            "focus": true
+        }
+    },
+    // allow for ctrl+p through console and terminal options
+    {
+        "key": "ctrl+i",
+        "command": "workbench.action.quickOpen",
+        "when": "!positronConsoleFocused && !terminalFocus"
+    },
+    {
+        "key": "ctrl+p",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "ctrl+shift+c",
+        "command": "r.packageCheck",
+        "when": "isRPackage"
+    },
+    {
+        "key": "ctrl+shift+e",
+        "command": "-r.packageCheck",
+        "when": "isRPackage"
+    }
+]
